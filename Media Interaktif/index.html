@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iconscout CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container active">
+        <div class="forms">
+            <div class="form login">
+                <div class="judul">
+                    <span class="title">Pembiasan Pada Lensa</span>
+                    <span class=" subtitle">Masukkan email dan kata sandi Anda di bawah ini</span>
+                </div>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Masukkan Email Anda" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Masukkan Password Anda" required>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <a href="#" class="text">Lupa password ?</a>
+                    </div>
+                    <a href="intro.html">
+                        <div class="input-field button">
+                            <input type="button" value="Masuk">
+                        </div>
+                    </a>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Belum punya akun?
+                        <a href="#" class="text signup-text">Buat akun</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration -->
+            <div class="form signup">
+                <div class="judul">
+                    <span class="title">Buat Akun </span><br>
+                    <span class=" subtitle">Lengkapi semua data</span>
+                </div>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Masukkan Nama Anda" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Masukkan Email Anda" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password"  placeholder="Masukkan Password Anda" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password"  placeholder="Konfirmasi Password Anda" required>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <a href="#" class="text login-link">
+                        <div class="input-field button">
+                            <input type="button" value="Masuk">
+                        </div>
+                    </a>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Sudah punya akun?
+                        <a href="#" class="text login-link2">Login</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
