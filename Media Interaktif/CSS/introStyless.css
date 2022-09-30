@@ -1,0 +1,142 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #433140;
+}
+#header{
+    float: center;
+}
+.imgHeader{
+    width: 100%;
+    height: 10%;
+}
+
+#footer{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background	: #894F5E;
+    font-size	: 1.5em;
+    text-align	: center;
+    padding-top	: 1px;
+    height		: 310px;
+}
+
+.item i{
+    cursor: pointer;
+    margin-top: 35px;
+    color		: black;
+}
+.item span{
+    color		: black;
+}
+#elemen1{
+    width		: 200px;
+    height		: 200px;
+    background	: #DFB0B0;
+    border-radius : 35%;
+    margin-left	: 200px;
+    float		:left;
+}
+#elemen2{
+    width		: 200px;
+    height		: 200px;
+    background	: #DFB0B0;
+    border-radius : 35%;
+    margin-left:450px;
+    float		:center;
+}
+#elemen3{
+    width		: 200px;
+    height		: 200px;
+    background	: #DFB0B0;
+    border-radius : 35%;
+    margin-right: -800px;
+    float		:right;
+}
+
+nav{
+    width		: 50%;
+    height		: 30px;
+}
+    
+nav ul li{
+    width		: 15%;
+    height		: 30px;
+    float		: left;
+    list-style	: none;
+    text-align	: center;
+}
+
+.item{
+    margin-top: 35px;
+    -webkit-transition:all .6s cubic-bezier(.165,.84,.44,1);
+    transition:all .6s cubic-bezier(.165,.84,.44,1);
+}
+
+.item::after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    -webkit-transition:all .6s cubic-bezier(.165,.84,.44,1);
+    transition:all .6s cubic-bezier(.165,.84,.44,1)
+}
+.item:hover{
+    -webkit-transform:scale(1.05,1.05);
+    transform:scale(1.05,1.05)
+}
+.item:hover::after{
+    opacity:1
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        overflow: auto;
+    }
+    #header {
+      float: none;
+      position: static;
+      margin: auto;
+      width: fit-content;
+      
+    }
+    #footer
+    {
+    height: 800px;
+
+    }
+    #elemen1{
+        width		: 200px;
+        height		: 200px;
+        margin-left: 100px;
+        
+        }
+        
+    #elemen2{
+        width		: 200px;
+        height		: 200px;
+        margin-top: 280px;
+        margin-left: 70px;
+        }
+        
+    #elemen3{
+        width		: 200px;
+        height		: 200px;
+        margin-top: 530px;
+        margin-right: -205px;
+        }
+    .imgHeader{
+            width: 100%;
+            height: 50%;
+        }
+  }
