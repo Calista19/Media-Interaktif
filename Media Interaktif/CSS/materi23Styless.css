@@ -209,18 +209,28 @@ main{
 #content .sub-materi{
     margin-top: 15px;
     font-size: 20px;
-
 }
-#content .sub-materi .imgMacamCembung{
+#content .sub-materi h2{
+    text-align: center;
+    padding: 10px;
+}
+
+#content .sub-materi .imgMacamCembungCekung{
     width:100%;
     height:100px;
     justify-content: center;
     object-fit: cover;
 }
+#content .sub-materi table{
+    margin-left: auto;
+    margin-right: auto;
+
+}
 table{
     margin: 15px 15px;
     background-color: white;
     border: thin solid #d4d4d4;
+    
 }
 table th:first-child{
 	padding: 15px;
