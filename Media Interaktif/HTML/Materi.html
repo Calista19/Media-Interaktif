@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="/CSS/materiStyless.css">
+    <link rel="stylesheet" href="../CSS/materiStyless.css">
     <script src="../JavaScript/materi.js"></script>
 </head>
 <body>
@@ -30,32 +30,39 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <button class="menubar active" onclick="judul(event, 'judul1')"><span class="las la-book"></span>
-                    <span>Lensa Cembung</span></button>
+                    <a href="../HTML/Materi.html"><button class="menubar menubaractive" onclick="judul()"><span class="las la-book"></span>
+                    <span>Pendahuluan</span></button></a>
                 </li>
                 <li>
-                    <button class="menubar" onclick="judul(event, 'judul2')"><span class="las la-book"></span>
-                    <span>Lensa Cengkung</span></button>
+                    <a href="../HTML/Materi2.html"><button class="menubar " onclick="judul()"><span class="las la-book"></span>
+                    <span>Lensa Cembung</span></button></a>
                 </li>
                 <li>
-                    <button class="menubar" onclick="judul(event, 'judul3')"><span class="las la-question"></span>
-                    <span>Evaluasi</span></button>
+                    <a href="../HTML/Materi3.html"><button class="menubar" onclick="judul()"><span class="las la-book"></span>
+                    <span>Lensa Cengkung</span></button></a>
+                </li>
+                <li>
+                    <a href=""><button class="menubar" onclick="judul()"><span class="las la-question"></span>
+                    <span>Evaluasi</span></button></a>
                 </li>
             </ul>
         </div>
     </div>
 
     <div class="main-content">
-        <div id="judul">
+        <div id="judulfix">
             <div class="judul judulAktif" id="judul1">
+                <center><h2>Lensa</h2></center>
+            </div>
+            <div class="judul" id="judul2">
                 <center><h2>Lensa Cembung</h2></center>
             </div>
             
-            <div class="judul" id="judul2">
+            <div class="judul" id="judul3">
                 <center><h2>Lensa Cengkung</h2></center>
             </div>
     
-            <div class="judul" id="judul3">
+            <div class="judul" id="judul4">
                 <center><h2>Evaluasi</h2></center>
             </div>
             <!-- <h2 class="title"></h2> -->
@@ -66,12 +73,18 @@
 
         <main>
             <div id="content">
-                <p>Hallo</p>
+                <div class="materi materiaktif" id="materi1">
+                    <p>&emsp;&emsp;Lensa adalah benda bening tembus cahaya yang terdiri atas dua 
+                        bidang lengkung atau satu bidang lengkung dan satu bidang datar. 
+                        Ada dua jenis lensa yaitu lensa cembung dan lensa cekung.</p>
+                    <img src="../Image/macam2Lensa.svg" class="imgHeader" width=100% height="350px">
+                </div>
             </div>
+            
             <div class="nav">
                 <center>
-                    <a href="" class="tombol">Sebelumnya</a>
-                    <a href="" class="tombol">Selanjutnya</a>
+                    <a href="../HTML/intro.html" class="tombol">Sebelumnya</a>
+                    <a href="../HTML/Materi2.html" class="tombol">Selanjutnya</a>
                 </center>
             </div>
         </main>

@@ -1,3 +1,14 @@
-{
-    "title" : "Lensa Cengkung"
-}
+[
+    {
+        "id": 1,
+        "title": "Lensa"
+    },
+    {
+        "id": 2,
+        "title": "Lensa Cembung"
+    },
+    {
+        "id": 3,
+        "title": "Lensa Cekung"
+    }
+]

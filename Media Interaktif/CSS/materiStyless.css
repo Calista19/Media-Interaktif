@@ -25,26 +25,31 @@ body{
 }
 
 .sidebar-brand{
-    height: 90px;
+    height: 80px;
     padding: 2rem 0rem 1rem 1rem;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .sidebar-brand span{
     display: inline-block;
     padding-right: 1px;
+    font-size: 35px;
 }
 
 .daftarIsi{
     height: 90px;
     padding: 1rem 0rem 1rem 1rem;
     color: #FFFFFF;
+    text-align: justify;
+    padding-left:35px;
 }
 
 .daftarIsi span{
     display: inline-block;
     padding-right: 1px;
     cursor:pointer;
+    font-size: 25px;
 }
 
 .sidebar-menu li{
@@ -67,14 +72,16 @@ body{
     cursor:pointer;
 }
 
-.sidebar-menu button.active{
+.sidebar-menu button.menubaractive{
     background-color: #DFB0B0;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: black;
     border-radius: 30px 0px 0px 30px;
 }
-
+.menubaractive{
+    display: block;
+}
 .sidebar-menu button span:first-child{
     font-size: 20px;
     padding-right: 1rem;
@@ -120,19 +127,20 @@ body{
     margin-top  : 21px;
     margin-right: 21px;
     transition: margin-left 300ms;
+    position: fixed;
     
 }
 
 #nav-toggle:checked ~ .main-content{
     margin-left: 140px;
 }
-#nav-toggle:checked ~ .main-content .main-content .judul{
+#nav-toggle:checked ~ .main-content #judulfix{
     width: calc(100% - 171px);
     left: 150px;
 }
-#judul{
+#judulfix{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 1rem 1.5rem;
     position: fixed;
     left: 280px;
@@ -143,25 +151,42 @@ body{
     justify-content: center;
  
 }
-#judul a span{
+#judulfix a span{
     font-size: 25px;
     color: white;
     position: absolute;
     right: 30px;
     
 }
-#judul h2{
+.judul h2{
     
-    font-size: 20px;
+    font-size: 26px;
     color: white;
 }
-
+.judul{
+    display:none;
+    overflow:auto;
+    text-align:justify
+}
+.judulAktif{
+    display: block;
+}
+.materi{
+    display:none;
+    overflow:auto;
+    text-align:justify
+}
+.materiaktif{
+    display: block;
+}
 main{
     margin-top: 70px;
     padding: 2rem 1.5rem;
     background: #DFB0B0;
     min-height: calc(100vh - 70px);
     border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    
 }
 
 #content
@@ -169,7 +194,7 @@ main{
     background	    : #FFFFFF;
     float		    : center;
     width		    : 100%;
-    height		    : 490px;
+    height		    : 475px;
     font-size	    : 1em;
     text-align	    : justify;
     border		    : 10px solid #894F5E;
@@ -177,6 +202,11 @@ main{
     border-radius   : 15px;
     padding         : 10px;
 }
+#content p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .nav a{
     display: inline-block;
     padding: 10px 13px;

@@ -1,0 +1,258 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppons', sans-serif;
+    
+}
+body{
+    background-color: #433140;
+}
+.sidebar{
+    width: 280px;
+    position: fixed;
+    height: 100%;
+    background-color: #433140;
+    left: 0;
+    top: 0;
+    transition: width 300ms;
+    z-index: 100;
+}
+
+.sidebar-brand{
+    height: 80px;
+    padding: 2rem 0rem 1rem 1rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.sidebar-brand span{
+    display: inline-block;
+    padding-right: 1px;
+    font-size: 35px;
+}
+
+.daftarIsi{
+    height: 90px;
+    padding: 1rem 0rem 1rem 1rem;
+    color: #FFFFFF;
+    text-align: justify;
+    padding-left:35px;
+}
+
+.daftarIsi span{
+    display: inline-block;
+    padding-right: 1px;
+    cursor:pointer;
+    font-size: 25px;
+}
+
+.sidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+}
+.sidebar-menu .menubar{
+    width: 100%;
+}
+
+.sidebar-menu button{
+    display: block;
+    font-size: 16px;
+    padding-left: 1rem;
+    color: #FFFFFF;
+    background-color: #ffffff00;
+    border: none;
+    text-align: justify;
+    cursor:pointer;
+}
+
+.sidebar-menu button.menubaractive{
+    background-color: #DFB0B0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+    border-radius: 30px 0px 0px 30px;
+}
+.menubaractive{
+    display: block;
+}
+.sidebar-menu button span:first-child{
+    font-size: 20px;
+    padding-right: 1rem;
+    
+}
+
+#nav-toggle{
+    display: none;
+}
+
+#nav-toggle:checked + .sidebar{
+    width: 150px;
+}
+
+#nav-toggle:checked + .sidebar .daftarIsi,
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li,
+#nav-toggle:checked + .sidebar .sidebar-menu{
+    padding-left: 0.4rem;
+}
+
+
+#nav-toggle:checked + .sidebar .daftarIsi h1 span:last-child,
+#nav-toggle:checked + .sidebar .sidebar-brand h1 span:last-child{
+    font-size: 20px;
+}
+#nav-toggle:checked + .sidebar .daftarIsi h1 span:first-child,
+#nav-toggle:checked + .sidebar .sidebar-brand h1 span:first-child{
+    font-size: 22px;
+}
+#nav-toggle:checked + .sidebar li button span:first-child{
+    width: 100%;
+    text-align: center;
+}
+#nav-toggle:checked + .sidebar li span:last-child{
+    font-size: 14px;
+    text-align: center;
+}
+
+.main-content{
+    margin-left: 280px;
+    margin-top  : 21px;
+    margin-right: 21px;
+    transition: margin-left 300ms;
+    position: fixed;
+    
+}
+
+#nav-toggle:checked ~ .main-content{
+    margin-left: 140px;
+}
+#nav-toggle:checked ~ .main-content #judulfix{
+    width: calc(100% - 171px);
+    left: 150px;
+}
+#judulfix{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 301px);
+    top: 21px;
+    z-index: 100;
+    transition: right 301ms;
+    justify-content: center;
+ 
+}
+#judulfix a span{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    
+}
+.judul h2{
+    
+    font-size: 26px;
+    color: white;
+}
+.judul{
+    display:none;
+    overflow:auto;
+    text-align:justify
+}
+.judulAktif{
+    display: block;
+}
+.materi{
+    display:none;
+    overflow:auto;
+    text-align:justify
+}
+.materiaktif{
+    display: block;
+}
+main{
+    margin-top: 70px;
+    padding: 2rem 1.5rem;
+    background: #DFB0B0;
+    min-height: calc(100vh - 70px);
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    
+}
+
+#content
+{
+    background	    : #FFFFFF;
+    float		    : center;
+    width		    : 100%;
+    height		    : 475px;
+    font-size	    : 1em;
+    text-align	    : justify;
+    border		    : 10px solid #894F5E;
+    overflow        : auto;
+    border-radius   : 15px;
+    padding         : 10px;
+}
+#content p{
+    font-size: 20px;
+    line-height: 30px;
+}
+#content .sub-materi{
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+#content .sub-materi .imgMacamCembung{
+    width:100%;
+    height:100px;
+    justify-content: center;
+    object-fit: cover;
+}
+table{
+    margin: 15px 15px;
+    background-color: white;
+    border: thin solid #d4d4d4;
+}
+table th:first-child{
+	padding: 15px;
+	background-color: #f4f4f4;
+	border:  thin solid #d4d4d4;
+}
+table th:last-child{
+	padding: 15px;
+	background-color: #d4d4d4 ;
+	border:  thin solid #f4f4f4;
+}
+.nav a{
+    display: inline-block;
+    padding: 10px 13px;
+    font-size: 14px;
+}
+
+.tombol{
+    height: 35px;
+    background-color: #894F5E;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 10px;
+    
+}
+@media screen and (max-width:1000px) {
+    body{
+        overflow: auto;
+    }
+    #content
+  {
+      float		: none;
+  }
+  }

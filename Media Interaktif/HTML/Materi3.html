@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/materi23Styless.css">
+    <script src="../JavaScript/materi.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h1><span class="lab la-accusoft"></span> <span>Lensa</span></h1>
+        </div>
+        <div class="daftarIsi">
+            <h1>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                    <span>Daftar Isi</span>
+                </label>
+            </h1>
+
+        </div>
+
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../HTML/Materi.html"><button class="menubar" onclick="judul()"><span class="las la-book"></span>
+                    <span>Pendahuluan</span></button></a>
+                </li>
+                <li>
+                    <a href="../HTML/Materi2.html"><button class="menubar" onclick="judul()"><span class="las la-book"></span>
+                    <span>Lensa Cembung</span></button></a>
+                </li>
+                <li>
+                    <a href="../HTML/Materi3.html"><button class="menubar menubaractive" onclick="judul()"><span class="las la-book"></span>
+                    <span>Lensa Cengkung</span></button></a>
+                </li>
+                <li>
+                    <a href=""><button class="menubar" onclick="judul()"><span class="las la-question"></span>
+                    <span>Evaluasi</span></button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div id="judulfix">
+            <div class="judul judulAktif" id="judul1">
+                <center><h2>Lensa Cengkung</h2></center>
+            </div>
+            <!-- <h2 class="title"></h2> -->
+            <a href="../HTML/intro.html">
+                <span class="las la-home"></span>
+            </a>
+        </div>
+
+        <main>
+            <div id="content">
+                <div class="materi materiaktif" id="materi1">
+                    <p>&emsp;&emsp;Lensa cekung atau disebut konkaf memiliki bagian tenagh lebih tipis daripada bagian tepinya 
+                        dan biasanya lensa cekung ini merupakan lensa negative. Sinar-sinar bias pada lensa ini bersifat 
+                        memencar (divergen) oleh karena itu, lensa cekung disebut juga lensa divergen. </p>
+
+                        <div class="sub-materi">
+                            <h3>Macam-macam bentuk lensa cengkung</h3>
+                            <table>
+                                <tr>
+                                    <th>Cekung tangkap atau bikonkaf</th>
+                                    <th>Gambar</th>
+                                </tr>
+                                <tr>
+                                    <th>Cekung datar atau plan-konkaf</th>
+                                    <th>Gambar</th>
+                                </tr>
+                                <tr>
+                                    <th>Cekung cekung atau konveks-konkaf</th>
+                                    <th>Gambar</th>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="nav">
+                <center>
+                    <a href="../HTML/Materi2.html" class="tombol">Sebelumnya</a>
+                    <a href="" class="tombol">Selanjutnya</a>
+                </center>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
