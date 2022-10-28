@@ -226,6 +226,12 @@ main{
     margin-right: auto;
 
 }
+iframe{
+    border: 5px groove #DFB0B0; 
+    border-radius:10px;
+    width : 60%;
+    height: 350px;
+}
 table{
     margin: 15px 15px;
     background-color: white;
